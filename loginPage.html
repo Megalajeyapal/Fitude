@@ -1,0 +1,191 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Login to Fitude</title>
+<style>
+
+html {
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: transparent
+}
+
+body {
+    font-family: benton-sans, 'Helvetica Neue', helvetica, arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #3f3f44;
+    background-image: url("2.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 200%
+
+}
+a {
+    color: #79589f;
+    text-decoration: none
+}
+
+a:hover,
+a:focus {
+    color: #5f467e;
+    text-decoration: underline
+}
+
+a:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px
+}
+
+.login-box{
+  position:relative;
+  margin: 10px auto;
+  margin-top:80px;
+  width: 400px;
+  height: 380px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.33);
+}
+.lb-header{
+  position:relative;
+  color: #00415d;
+  margin: 5px 5px 10px 5px;
+  padding-bottom:10px;
+  border-bottom: 1px solid #eee;
+  text-align:center;
+  height:28px;
+}
+.lb-header a{
+  margin: 0 25px;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #00415d;
+  font-weight: bold;
+  font-size: 1.8rem;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.lb-header .active{
+  color: #00415d;
+  font-size: 18px;
+}
+.social-login{
+  position:relative;
+  float: left;
+  width: 100%;
+  height:auto;
+  padding: 10px 0 15px 0;
+  border-bottom: 1px solid #eee;
+}
+.social-login a{
+  position:relative;
+  float: left;
+  width:calc(40% - 8px);
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid rgba(0,0,0,0.05);
+  padding: 12px;
+  border-radius: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0 3%;
+  text-align:center;
+}
+.social-login a i{
+  position: relative;
+  float: left;
+  width: 20px;
+  top: 2px;
+}
+.social-login a:first-child{
+  background-color: #49639F;
+}
+.social-login a:last-child{
+  background-color: #DF4A32;
+}
+.email-login,.email-signup{
+  position:relative;
+  float: left;
+  width: 100%;
+  height:auto;
+  margin-top: 20px;
+  text-align:center;
+}
+.u-form-group{
+  width:100%;
+  margin-bottom: 10px;
+}
+.u-form-group input[type="email"],
+.u-form-group input[type="password"]{
+  width: calc(50%);
+  height:45px;
+  outline: none;
+  border: 1px solid #ddd;
+  padding: 0 10px;
+  border-radius: 2px;
+  color: #333;
+  font-size: 1.8rem;
+  -webkit-transition:all 0.1s linear;
+  -moz-transition:all 0.1s linear;
+  transition:all 0.1s linear;
+}
+.u-form-group input:focus{
+  border-color: #358efb;
+}
+.u-form-group button{
+  width:50%;
+  background-color: #1CB94E;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 14px 0;
+  border-radius: 2px;
+  text-transform: uppercase;
+}
+
+
+
+
+</style>
+</head>
+<body> 
+
+
+<br/>  
+<div class="login-box">
+    <div class="lb-header">
+   <a href="loginPage.html" class="active" id="login-box-link">Login</a>
+      <a href="registerPage.html" id="signup-box-link">Sign Up</a>
+    </div>
+    
+   <!-- <form class="email-login" method="post" action="insert.php">-->
+<form class="email-login" method="post" action="dashboardPage.html">
+      <div class="u-form-group">
+        <input type="email" placeholder="Email"/>
+      </div>
+	<br>
+      <div class="u-form-group">
+        <input type="password" placeholder="Password"/>
+      </div>
+      <br><br>
+      <div class="u-form-group">
+        <button>Log in</button>
+      </div>
+	<br><br>
+      <div class="u-form-group">
+        <a href="/HotelAutomationSoftware/forgotPasswordPage.jsp" class="forgot-password">Forgot password?</a>
+      </div>
+    </form>
+  </div>
+
+<
+</body>
+</html>
